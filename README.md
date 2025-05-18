@@ -32,40 +32,59 @@ on the second image, illustrating stereo epipolar geometry .
 
 ## 🔧 Installation
 
-```bash
+``bash
 # Optional: create & activate virtualenv
 python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
 pip install opencv-python numpy matplotlib
-'''
- ## Usage
-%   -----
-%   1. Run the tool:
-%        python epipolar_gui.py
-%
-%   2. Select your two stereo images via the file dialogs.
-%
-%   3. When the Matplotlib window appears, click any point in the first image.
-%
-%   4. Observe the blue (7-point) and green (8-point) epipolar lines in the second image.
-%
-%   File Structure
-%   --------------
-%     epipolar_gui.py      - Main Python script implementing everything
-%     requirements.txt     - pip-installable dependency list
-%     README.m             - This MATLAB-style comment README
-%
-%   Core Functions (in epipolar_gui.py)
-%   -----------------------------------
-%     compute_fundamental_matrices()  - Detects SIFT features, matches them, computes F₇ & F₈
-%     draw_epipolar_lines(event)      - Handles clicks, computes & draws epipolar lines
-%     load_images()                   - Opens file dialogs, converts BGR→RGB, sets up plot
-%
-%   Contact & Contributions
-%   -----------------------
-%   Please open GitHub issues or submit pull requests to propose enhancements,
-%   bug fixes, or documentation improvements.
-%
-% =========================================================================
+'''\\
+## ▶️ Usage
+
+1. **Run the tool**  
+   ```bash
+   python epipolar_gui.py
+Select Images
+Two file-picker dialogs will appear—choose your stereo pair.
+
+Click to Visualize
+When the Matplotlib window appears, click any point in the first image.
+
+Observe Epipolar Lines
+The second image will display:
+
+Blue line from the 7-point algorithm
+
+Green line from the 8-point algorithm
+
+## 📂 File Structure
+bash
+Copy
+Edit
+.
+├── epipolar_gui.py      # Main Python script
+├── requirements.txt     # Dependency list
+└── README.md            # Project documentation
+## 📝 Core Functions
+compute_fundamental_matrices()
+Detects SIFT keypoints, matches via FLANN, computes F_7 & F_8.
+
+draw_epipolar_lines(event)
+Handles Matplotlib click events, computes and draws epipolar lines.
+
+load_images()
+Uses Tkinter dialogs to select images, sets up the Matplotlib figure, and binds callbacks.
+
+## 📖 References
+OpenCV Epipolar Geometry Tutorial
+
+OpenCV findFundamentalMat Documentation
+
+LearnOpenCV: Epipolar Geometry & Stereo Vision
+
+OpenCV SIFT & FLANN Examples
+
+Matplotlib Event Handling Guide
+
+Tkinter File Dialog Documentation
