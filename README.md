@@ -1,8 +1,7 @@
-# <!--
 ==========================================
    Epipolar Geometry Interactive Tool
 ==========================================
--->
+
 
 ## 🚀 Project Overview  
 An interactive Python tool to **automatically compute** the fundamental matrix between two images and **visualize epipolar lines** via both 7-point and 8-point algorithms. Click any point in the first image to overlay:
