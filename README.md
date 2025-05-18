@@ -39,7 +39,8 @@ source venv/bin/activate
 
 # Install dependencies
 pip install opencv-python numpy matplotlib
-%   Usage
+'''
+ ## Usage
 %   -----
 %   1. Run the tool:
 %        python epipolar_gui.py
