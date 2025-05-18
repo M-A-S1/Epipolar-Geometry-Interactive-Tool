@@ -66,6 +66,7 @@ Edit
 ├── epipolar_gui.py      # Main Python script
 ├── requirements.txt     # Dependency list
 └── README.md            # Project documentation
+
 ## 📝 Core Functions
 compute_fundamental_matrices()
 Detects SIFT keypoints, matches via FLANN, computes F_7 & F_8.
@@ -76,15 +77,3 @@ Handles Matplotlib click events, computes and draws epipolar lines.
 load_images()
 Uses Tkinter dialogs to select images, sets up the Matplotlib figure, and binds callbacks.
 
-## 📖 References
-OpenCV Epipolar Geometry Tutorial
-
-OpenCV findFundamentalMat Documentation
-
-LearnOpenCV: Epipolar Geometry & Stereo Vision
-
-OpenCV SIFT & FLANN Examples
-
-Matplotlib Event Handling Guide
-
-Tkinter File Dialog Documentation
