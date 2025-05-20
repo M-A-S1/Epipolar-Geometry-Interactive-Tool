@@ -58,14 +58,6 @@ Blue line from the 7-point algorithm
 
 Green line from the 8-point algorithm
 
-## 📂 File Structure
-bash
-Copy
-Edit
-.
-├── epipolar_gui.py      # Main Python script
-├── requirements.txt     # Dependency list
-└── README.md            # Project documentation
 
 ## 📝 Core Functions
 compute_fundamental_matrices()
