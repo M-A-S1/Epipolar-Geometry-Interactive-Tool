@@ -44,3 +44,15 @@ Install dependencies with:
 
 ```bash
 pip install opencv-python numpy matplotlib
+```
+
+## 🚀 Run the Code
+
+```bash
+python epipolar_gui.py
+```
+## 📝 Notes
+The 7-point algorithm may return multiple fundamental matrices. This project uses the first one.
+
+Ensure that the selected image pair has sufficient overlapping features for accurate epipolar geometry.
+
