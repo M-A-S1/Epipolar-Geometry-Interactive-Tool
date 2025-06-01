@@ -29,9 +29,8 @@ This project allows users to load two images, select a point in the first image,
 
 Below is a sample output after selecting an image pair and clicking a point in the first image:
 
-![Epipolar Lines Result](results/example_output.png)
+![Epipolar Lines Result](Figure_1.png)
 
-> Replace `results/example_output.png` with your actual image path inside the repo.
 
 ## 🖥️ Requirements
 
